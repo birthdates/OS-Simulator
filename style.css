@@ -1,0 +1,87 @@
+body {
+  font-family: 'Ubuntu Mono', monospace;
+  color: lime;
+  background: rgb(28,28,28);
+}
+
+::selection {
+  background: lime;
+  color: rgb(28,28,28);
+}
+
+* {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0 !important
+}
+
+.osContainer{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.cmdContainer {
+  overflow-y: auto;
+}
+
+.exitButton {
+  display: block;
+  float: right;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background: crimson;
+  color: white;
+  border-radius: 3px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.exitText {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.commandContainer{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.commandOutput {
+  display: flex;
+  flex-direction: column;
+}
+
+.commandHistory {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.commandInput {
+  outline: none;
+  border: 0;
+  margin-left: 10px;
+  width: 100%;
+  color: inherit;
+  appearance: none;
+  font-weight: 500;
+  font-size: 16px;
+  -webkit-appearance: none;
+  background: inherit;
+  font-family: inherit;
+}
+
+.title {
+  color: limegreen;
+  line-height: 45px;
+  width: 100%;
+}
